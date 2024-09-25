@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/faq.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>FAQ</title>
+</head>
+
+<body class="bg-dark-subtle">
+
+ <!--header-->
+ <div class=" text-center py-4 bg-body-secondary logo-principal">
+  <header class="row">
+    <div class="col-12">
+      <img src="img/portada/logo.png" width="120px" height="120px">
+      <h1 class="text-dark text-uppercase mt-2">azahar coffee</h1>
+    </div>
+  </header>
+</div>
+
+<!--nav-->
+
+  <div class="box-nav ">
+    
+    <nav class="row  justify-content-between align-items-center text-uppercase">
+      <!---->
+      <!--carta-->
+      <a href="carta.html" class="col-12 col-md col-lg text-decoration-none text-dark">
+        <img src="img/portada/carta-de-vinos.png" >
+        carta</a>
+      <!--aboutus-->
+
+      <a href="aboutus.html" class="col-12 col-md col-lg text-decoration-none text-dark">
+        <img src="img/portada/comunidad.png" >
+        about us</a>
+      <!--faq-->
+
+      <a href="faq.html" class="col-12 col-md col-lg text-decoration-none text-dark">
+        <img src="img/portada/globos-de-texto.png" >
+        FAQ</a>
+      <!--regreso a inicio-->
+      <a href="inicio.html" class="col-12 col-md col-lg text-decoration-none text-dark">
+        <img src="img/portada/casa.png" >
+        inicio</a>
+      <!--sello de calidad-->
+      <span class="col-12 col-md col-lg sello">
+        <img src="img/portada/descarga.png" width="90px" height="90px">
+      </span>
+    </nav>
+  </div>
+  <!----------------------------------------------main---------------------------------------------------->
+  <main id="faq" class="py-md-5">
+    <h1 class="my-5 text-center text-uppercase">faq</h1>
+
+    <div class="container">
+
+      <div class="accordion mx-auto" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Ofrecéis alternativas para vegetarianos o veganos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              ¡Sí! Ofrecemos alternativas para todo tipo de dietas,
+              intolerancias y alergias. ¡Pregúntanos sin compromiso!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              No quiero pedir a domicilio, ni takeaway… ¿Puedo comer en el local?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              ¡Claro! Tenemos espacio para que todos nuestros clientes se relajen
+              disfrutando de una deliciosa comida en nuestro local. ¡Baja en esta
+              página y localízanos!
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Cuál es vuestro horario?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Abrimos de 5a.m a 2p.m ininterrumpidamente.
+              ¡Luego puedes hacer tu pedido escoger tu hora de recogida!
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+  <!--formulario-->
+  <main id="form" class="py-md-3">
+    <h1 class="text-center text-uppercase">formulario</h1>
+    <div class="container">
+      <form class="formulario">
+        <!-- Name input -->
+        <div class="form-outline mb-2">
+          <label class="form-label text-dark fw-semibold" for="form4Example1">Nombre</label>
+          <input type="text" id="form4Example1" class="form-control" />
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-2">
+          <label class="form-label text-dark fw-semibold" for="form4Example2">Email</label>
+          <input type="email" id="form4Example2" class="form-control" />
+
+        </div>
+
+        <!-- Message input -->
+        <div class="form-outline mb-2">
+          <label class="form-label text-dark fw-semibold" for="form4Example3">Mensaje</label>
+          <textarea class="form-control" id="form4Example3" rows="5"></textarea>
+
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+          <label class="form-check-label text-dark fw-semibold " for="form4Example4">
+            Enviar me una copia de este mensaje
+          </label>
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center ">
+          <button type="button" onclick="mostrarComentario()"
+            class="btn btn-primary fw-semibold mb-2 me-2">Enviar</button>
+          <button type="reset" class="btn btn-primary fw-semibold mb-2">limpiar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div id="comentarioMostrado" class="container py-4">
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!----------------------------------------------FOOTER ------------------------------------------------->
+  <footer class="text-center text-reset py-4">
+    <div class="container">
+      <nav class="row justify-content-between align-items-center bg-primary-subtle">
+        <!--logo-->
+        <a href="inicio.html" class="col-12 col-md-3 text-dark d-flex align-items-center text-decoration-none">
+          <img src="img/portada/logo.png" width="30px" height="30px" class="img-fluid mr-4">
+          <span class="px-3 text-uppercase">azahar coffee</span>
+        </a>
+        <!--map-->
+        <a href="map.html" class="col-12 col-md-3 text-dark d-flex align-items-center text-decoration-none">
+          <img src="img/rrss/mapa.png" width="30px" height="30px" class="img-fluid mr-4">
+          <span class="px-3 text-uppercase">ubicanos</span>
+        </a>
+        <!--telefono-->
+        <li class="col-12 col-md-3 text-dark d-flex align-items-center">
+          <img src="img/rrss/whatsapp.png" width="30px" height="30px" class="img-fluid mr-3">
+          <span class="px-3 d-block">644252525</span>
+        </li>
+        <!--redes sociales-->
+        <ul class="col-12 col-md-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase text-dark">redes sociales</li>
+          <li class="d-flex justify-content-between">
+            <a href="#" class="text-reset">
+              <img src="img/rrss/facebook.png" alt="" width="30px" height="30px" class="img-fluid">
+            </a>
+            <a href="#" class="text-reset">
+              <img src="img/rrss/instagram.png" alt="" width="30px" height="30px" class="img-fluid">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

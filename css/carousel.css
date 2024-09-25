@@ -1,0 +1,18 @@
+#carouselMain{
+    padding: 20px 0;
+
+}
+
+
+.c-item {
+    height: 65rem;
+}
+    
+.c-img {
+    height: 100%;
+}
+    
+.custom-carousel-icon {
+    font-size: 40px; 
+}
+

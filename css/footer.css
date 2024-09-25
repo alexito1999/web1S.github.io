@@ -1,0 +1,25 @@
+.f-img{
+    width: 48px;
+    height: 48px;
+
+}
+.r-img{
+    width: 40px;
+    height: 40px;
+}
+.t-img{
+    width: 40px;
+    height: 40px;
+}
+.m-img{
+    width: 48px;
+    height: 48px;
+}
+
+footer{
+    padding: 40px  10px;
+    background-color: #E9ECEF;
+    border: 0.5px  grey solid;
+    border-left: 0;
+    border-right: 0;
+}
